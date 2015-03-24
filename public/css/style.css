@@ -1,0 +1,145 @@
+body {
+    font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif;
+    background-color: #EBE9E1;
+}
+
+/* Warning for browsers with Javascript disabled */
+.no-script {
+    margin: 50px 0;
+}
+.no-script p {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #B58F14;
+    font-weight: bold;
+    background-color: #F5BC02;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* PHP error messages */
+.php-err {
+    text-align: center;
+    color: #F23D22;
+}
+
+/* Main Header*/
+header h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3.4em;
+}
+
+header h1 a:link, header h1 a:visited {
+    color: #292628;
+    text-decoration: none;
+}
+
+/* Search Box for Rss Feed */
+#feedUrl {
+    width: 570px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Submit Button*/
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: #292628;
+    color: white;
+    border: black;
+    font-size: 1.2em;
+}
+
+/* Drop Down Menu for articles per page */
+.per-page-container {
+    width: 570px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Feed Section Main Heading */
+.feed-section h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.6em;
+}
+
+.feed-section h1 a:link, .feed-section h1 a:visited {
+    color: #292628;
+}
+
+/* Feed Section Sub- Heading */
+.feed-section h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Feed Section Page Links */
+.page-links-container {
+    text-align: center;
+    width: 570px;
+    margin: 20px auto 100px;
+}
+
+.page-links-container a {
+    padding: 0px 6px;
+    font-size: 1.2em;
+}
+
+.page-links-container a:link, .page-links-container a:visited {
+    color: #292628;
+    text-decoration: none;
+}
+
+.page-links-container a.highlight-page {
+    color: #0D68DE;
+    font-weight: bold;
+}
+
+/* Article Divs */
+.ep-div {
+    width: 725px;
+    margin: 20px auto;
+    border: 1px dashed black;
+    padding-bottom: 10px;
+}
+
+.ep-div h3 {
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+.ep-div p {
+    margin: 10px;   
+}
+
+.ep-div .ep-desc {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.ep-audio {
+    display: block;
+    width: 705px;
+    margin: 10px auto;
+}
+
+.ep-div a {
+    margin: 10px 5px 10px 10px;
+}
+
+.ep-div a:link, .ep-div a:visited {
+    color: #292628;
+}
+
+/* articles-per-page drop down menu is hidden by default */
+.noshow {
+    display: none;
+}
