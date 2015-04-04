@@ -36,7 +36,7 @@ perPageMenu.addEventListener('change', function () {
 function pageLinkHandlers() {
     for (var i = 0; i < pageLinkArr.length; i++) {              // loop through array 
         pageLinkArr[i].addEventListener('click', function() {  
-            currentPage = parseInt(this.id.replace('p', ''));   // extract page # from anchor link id and store to currentPage
+            currentPage = parseInt(this.getAttribute('data-page').replace('p', ''));   // extract page # from anchor link id and store to currentPage
             feedSection.innerHTML = '';                         // remove previously shown feed articles
             callAjax(parseXML, 'getFeed.php', 'feedUrl=' + feedUrl);
         })
@@ -76,7 +76,7 @@ function doesPropertyExist(browser, elem, prop) {
 }
 
 // newElem() is a helper function to create new DOM elements & return them
-function newElem( elemType, elemHref, elemId, elemText, elemClass, elemHTML ) {
+function newElem( elemType, elemHref, elemData, elemText, elemClass, elemHTML ) {
     var newElem = document.createElement(elemType);
 
     // if function was passed a href attribute, set it
@@ -85,8 +85,8 @@ function newElem( elemType, elemHref, elemId, elemText, elemClass, elemHTML ) {
     }
 
     // if function was passed a id attribute, set it
-    if (elemId) {
-        newElem.setAttribute('id', elemId);
+    if (elemData) {
+        newElem.setAttribute('data-page', elemData);
     }
 
     // if function was passed innerText content, set it

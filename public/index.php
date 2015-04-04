@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RSS Reader</title>
@@ -19,7 +18,7 @@
             <input type='submit' name='submit'  value='Get Feed' class = 'submit-btn'>
         </form>
 
-        <h3 class="php-err noshow"></h3>
+        <div class="php-err noshow"></div>
 
         <noscript>
             <div class="no-script">
@@ -43,8 +42,8 @@
             </select>
         </div>
     
-        <section class = "feed-section">
-        </section>
+        <div class = "feed-section">
+        </div>
 
         <script src="js/script.js" type="text/javascript"></script>
     </body>
